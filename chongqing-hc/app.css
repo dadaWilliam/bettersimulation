@@ -75,7 +75,7 @@ body {
 }
 
 .top_bg_mine {
-  background-image: url("./static/mine_code_background.png") !important;
+  background-image: url("./static/code_background.png") !important;
 }
 
 .top_bg_other {
