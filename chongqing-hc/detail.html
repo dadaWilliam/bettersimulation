@@ -103,7 +103,7 @@
   </view>
 </view>
 <script>
-  addStorageField("_name", "#name", "名字", "郑奇臻", presetFilters.lastnameonly);
+  addStorageField("_name", "#name", "名字", "郑奇臻", function(t){return null==t?"":2==t.length?"*"+t.substring(1,2):3==t.length?t.substring(0,1)+"*"+t.substring(2,3):3<t.length?t.substring(0,1)+"**"+t.substring(3,t.length):void 0});
   addStorageField("_idcard", "#idcard", "身份证号", "500101195306153019", presetFilters.idcard(6, 4));
   addStorageField("_phone", "#phone", "手机号码", "15319890604", presetFilters.phone());
 
